@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 const JWT_SECRET = process.env.JWT_SECRET!
 
-let todos = [
+const todos = [
   { id: 1, text: 'Learn Next.js', completed: false },
   { id: 2, text: 'Build a todo app', completed: false },
 ]
@@ -18,7 +18,7 @@ function verifyToken(request: Request) {
   try {
     return jwt.verify(token, JWT_SECRET)
   } catch (error) {
-    return null
+    return (error)
   }
 }
 
