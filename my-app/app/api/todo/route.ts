@@ -6,6 +6,16 @@ const JWT_SECRET = process.env.JWT_SECRET!
 const todos = [
   { id: 1, text: 'Learn Next.js', completed: false },
   { id: 2, text: 'Build a todo app', completed: false },
+  { id: 2, text: 'Build a todo app', completed: false },
+
+  { id: 2, text: 'Build a todo app', completed: false },
+
+  { id: 2, text: 'Build a todo app', completed: false },
+
+  { id: 2, text: 'Build a todo app', completed: false },
+
+  { id: 2, text: 'Build a todo app', completed: false },
+
 ]
 
 function verifyToken(request: Request) {
