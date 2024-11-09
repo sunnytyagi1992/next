@@ -14,6 +14,6 @@ export async function POST(request){
         return NextResponse.json({isValid: true, decoded});
     }
     catch(error){
-        return NextResponse.json({ isValid: false, error: error.message}, {status: 500});
+        return NextResponse.json({ isValid: false, error: error.message}, {status: 501});
     }
 }
